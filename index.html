@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derick Marçal · Currículo Interativo</title>
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome (ícones) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Estrutura HTML (index.html) -->
+    <div class="container">
+
+        <!-- Menu responsivo -->
+        <nav class="navbar">
+            <div class="logo">D.M.</div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#ferramentas">Ferramentas</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#educacao">Educação</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+
+        <!-- Header / Apresentação -->
+        <section id="home" class="section header-card">
+            <div class="profile-row">
+                <!-- Foto de perfil (placeholder com iniciais) -->
+                <img src="https://via.placeholder.com/180x180/2b3d6f/ffffff?text=DM" alt="Foto de Derick Marçal" class="profile-pic">
+                <div class="profile-info">
+                    <h1>Derick Marçal</h1>
+                    <span class="badge"><i class="fas fa-code"></i> Estudante · Desenvolvedor Web Iniciante</span>
+                    <p class="description">Estou aprendendo desenvolvimento web e buscando crescer na área de tecnologia. Cada linha de código é um passo em direção a soluções criativas e funcionais.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre Mim -->
+        <section id="sobre" class="section">
+            <h2 class="section-title">Sobre mim</h2>
+            <div class="about-card">
+                <p>⚡ Dedicação, aprendizado constante e paixão por programação me movem. Acredito que a tecnologia transforma ideias em realidade. Atualmente foco meus estudos em <strong>HTML, CSS e JavaScript</strong>, sempre buscando boas práticas e evolução contínua. Também tenho experiência em ferramentas de análise de dados como Power BI e Google Looker Studio.</p>
+            </div>
+        </section>
+
+        <!-- Habilidades (barras de progresso) -->
+        <section id="habilidades" class="section">
+            <h2 class="section-title">Habilidades Dev</h2>
+            <div class="skills-container">
+                <div class="skill-item">
+                    <div class="skill-info"><span>HTML</span><span>90%</span></div>
+                    <div class="progress-bar"><div class="progress-fill" data-width="90"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info"><span>CSS</span><span>80%</span></div>
+                    <div class="progress-bar"><div class="progress-fill" data-width="80"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info"><span>JavaScript</span><span>70%</span></div>
+                    <div class="progress-bar"><div class="progress-fill" data-width="70"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info"><span>Responsividade</span><span>75%</span></div>
+                    <div class="progress-bar"><div class="progress-fill" data-width="75"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info"><span>Lógica de programação</span><span>85%</span></div>
+                    <div class="progress-bar"><div class="progress-fill" data-width="85"></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Novas Ferramentas (Power BI e Looker) -->
+        <section id="ferramentas" class="section">
+            <h2 class="section-title">Ferramentas de Dados</h2>
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <i class="fas fa-chart-bar"></i>
+                    <h3>Power BI</h3>
+                    <p>Dashboards interativos, DAX, modelagem de dados e compartilhamento de relatórios.</p>
+                </div>
+                <div class="tool-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Google Looker Studio</h3>
+                    <p>Visualização de dados, conexão com diversas fontes e criação de relatórios dinâmicos.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projetos (fictícios) -->
+        <section id="projetos" class="section">
+            <h2 class="section-title">Projetos</h2>
+            <div class="projects-grid">
+                <!-- Sistema de estoque -->
+                <div class="project-card">
+                    <h3>📦 Sistema de Estoque</h3>
+                    <p>Controle de entrada/saída, estoque mínimo e relatórios simples.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JS</span>
+                    </div>
+                    <button class="btn-project" data-project="estoque">Ver projeto →</button>
+                </div>
+                <!-- Dashboard administrativo -->
+                <div class="project-card">
+                    <h3>📊 Dashboard admin</h3>
+                    <p>Painel com cards, gráficos dinâmicos e menu responsivo.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JS</span>
+                    </div>
+                    <button class="btn-project" data-project="dashboard">Ver projeto →</button>
+                </div>
+                <!-- Página de login moderna -->
+                <div class="project-card">
+                    <h3>🔐 Página de login</h3>
+                    <p>Interface clean com validação de campos e tema claro/escuro.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JS</span>
+                    </div>
+                    <button class="btn-project" data-project="login">Ver projeto →</button>
+                </div>
+                <!-- CRUD simples -->
+                <div class="project-card">
+                    <h3>📝 CRUD Simples</h3>
+                    <p>Cadastro de tarefas com localStorage (adicionar, listar, deletar).</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JS</span>
+                    </div>
+                    <button class="btn-project" data-project="crud">Ver projeto →</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Educação -->
+        <section id="educacao" class="section">
+            <h2 class="section-title">Educação</h2>
+            <div class="edu-card">
+                <i class="fas fa-graduation-cap"></i>
+                <div>
+                    <h3>Estudante de Desenvolvimento Web</h3>
+                    <p>Interesse em tecnologia e programação desde cedo. Estudando HTML, CSS, JavaScript e lógica através de cursos online, bootcamps e projetos práticos. Complemento com análises de dados utilizando Power BI e Looker Studio.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contato -->
+        <section id="contato" class="section">
+            <h2 class="section-title">Contato</h2>
+            <div class="contact-wrapper">
+                <div class="contact-links">
+                    <a href="mailto:derick.marcal@email.com"><i class="fas fa-envelope"></i> derick.marcal@email.com</a>
+                    <a href="#"><i class="fab fa-instagram"></i> @derick.dev</a>
+                    <a href="#"><i class="fab fa-github"></i> github.com/derickmarcal</a>
+                </div>
+                <button class="btn-message" id="sendMessageBtn"><i class="fas fa-paper-plane"></i> Enviar mensagem</button>
+            </div>
+        </section>
+
+        <!-- Botão voltar ao topo -->
+        <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo"><i class="fas fa-arrow-up"></i></button>
+    </div>
+
+    <!-- JavaScript externo -->
+    <script src="script.js"></script>
+</body>
+</html>
